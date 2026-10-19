@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#245a46"><meta name="description" content="知码，程序员的个人知识空间。前端、Flutter、Android 与算法，223 篇知识笔记，连接每一次理解与实践。">
+<title>知码 · 程序员知识库</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="layout">
+<aside class="sidebar" id="sidebar">
+<a class="brand" href="#home"><span class="brand-icon">&lt;/&gt;</span><span>知码<small>DEV KNOWLEDGE</small></span></a>
+<div class="workspace-label">你的知识，持续生长 <span>✦</span></div>
+<nav class="primary-nav" aria-label="主导航">
+<a href="#home" data-nav="home"><span data-icon="grid"></span>知识概览</a>
+<a href="#library" data-nav="library"><span data-icon="book"></span>全部知识<span class="nav-count">223</span></a>
+<a href="#paths" data-nav="paths"><span data-icon="route"></span>学习路径</a>
+<a href="#saved" data-nav="saved"><span data-icon="bookmark"></span>我的收藏<span class="saved-count nav-count">0</span></a>
+</nav>
+<div class="nav-label">知识领域 <span>04</span></div>
+<nav class="subject-nav" id="subject-nav" aria-label="知识领域"></nav>
+<div class="sidebar-bottom"><div class="growth-card"><div class="growth-icon">♧</div><b>每天进步一点点</b><p>让零散的知识，长成你的体系。</p><a href="#progress">查看学习记录 <span>↗</span></a></div>
+<a class="local-profile" href="#progress"><span class="avatar">Z</span><span>我的学习空间<small><i></i> 进度保存在此浏览器</small></span><span>↗</span></a></div>
+</aside>
+<div class="main-shell">
+<header class="topbar"><button class="icon-button mobile-menu" aria-label="展开导航" id="mobile-menu"><span data-icon="menu"></span></button><div class="breadcrumb">我的知识空间 <span>/</span> <strong id="crumb">知识概览</strong></div><div class="top-actions"><button class="search-trigger" id="open-search"><span data-icon="search"></span><span>搜索知识、代码、关键词...</span><kbd>⌘ K</kbd></button><button class="icon-button" id="theme-toggle" aria-label="切换深色模式"><span data-icon="moon"></span></button><a class="top-avatar" href="#progress" aria-label="查看学习记录">Z</a></div></header>
+<main id="main" tabindex="-1"></main>
+<footer><span><b>&lt;/&gt;</b> 知码 · 让知识成为自己的力量</span><span>KEEP LEARNING, KEEP BUILDING <span class="footer-dot">●</span></span></footer>
+</div>
+</div>
+<dialog id="search-dialog"><div class="search-box"><span data-icon="search"></span><input id="search-input" placeholder="搜索知识标题、正文或代码…" aria-label="全文搜索"><button class="plain-button" id="close-search">Esc</button></div><div class="search-meta" id="search-meta">搜索你的 223 篇知识笔记</div><div id="search-results"></div><div class="search-footer">支持全文搜索 <span>↵ 打开第一条结果</span></div></dialog>
+<div id="toast" role="status"></div>
+<script src="data.js"></script><script src="app.js"></script>
+</body></html>

@@ -40,3 +40,16 @@ python3 import_content.py --source ../ti --output dist
 收藏与进度保存在浏览器；原文路径相同时，文章 ID 保持不变。`dist/release.json` 记录内容版本与发布来源。每次构建全量更新索引，并移除已删除的文章；校验失败不会替换上一份可用构建。
 
 原 Sites 站点身份保留在 `.openai/hosting.json`，其访问权限不变。
+
+## 服务器同步
+
+服务器使用 `ops/server_sync.py` 获取本仓库 `main` 分支中的 `dist/`。同步器只提取静态文件，校验完整后切换 `current` 软链接；拉取或校验失败时继续使用上一版，不需要保存个人 GitHub 令牌。
+
+配套 `zhima-sync.timer` 每分钟检查一次发布。查看状态：
+
+```bash
+systemctl status zhima-sync.timer
+journalctl -u zhima-sync.service -n 30
+```
+
+原站点 Nginx 配置的备份记录在 `/www/server/zhima-publisher/backups/`，已发布版本保留在站点的 `releases/` 目录。

@@ -1,6 +1,6 @@
 # 知码 · 程序员知识库
 
-在线阅读：[知码知识库](https://zrxxuan.github.io/zhima-site/)
+在线阅读：[服务器主站](http://8.140.56.163/) · [GitHub Pages 备用站](https://zrxxuan.github.io/zhima-site/)
 
 这是由 [ZRXXUAN/ti](https://github.com/ZRXXUAN/ti) 自动生成的**公开网站镜像**。原始资料与网站源码统一在私有 `ti` 仓库维护；本仓库包含获准公开的内容、静态页面与构建脚本。
 

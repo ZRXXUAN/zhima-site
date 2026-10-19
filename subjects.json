@@ -1,0 +1,30 @@
+{
+  "subjects": [
+    {
+      "id": "frontend", "name": "前端开发", "icon": "JS",
+      "description": "从 JavaScript 基础到 React / Vue 源码，建立完整的前端知识体系。",
+      "include": ["frontend-interview/**/*.md"], "defaultCategory": "核心知识",
+      "stages": ["JavaScript 基础", "ES6 与异步", "React / Vue", "工程化与网络", "框架源码"]
+    },
+    {
+      "id": "flutter", "name": "Flutter 跨端", "icon": "Fl",
+      "description": "深入 Dart、三棵树与渲染机制，把跨端开发的原理串起来。",
+      "include": ["flutter-interview-prep/题库/**/*.md"], "defaultCategory": "跨端开发",
+      "stages": ["Dart 基础", "Widget 与布局", "状态管理", "渲染与性能", "架构与混合开发"]
+    },
+    {
+      "id": "android", "name": "Android 开发", "icon": "An",
+      "description": "从 Kotlin 与生命周期出发，走向 Jetpack Compose 和完整项目。",
+      "include": ["android-learning/lessons/**/*.md", "android-interview/**/*.md"], "defaultCategory": "开发课程",
+      "stages": ["Kotlin 与环境搭建", "组件与生命周期", "Jetpack 与数据层", "Compose 与项目实战", "面试原理"]
+    },
+    {
+      "id": "algorithm", "name": "算法与数据结构", "icon": "{ }",
+      "description": "连接解题思路、复杂度分析与可运行代码，积累自己的解题方法。",
+      "include": ["leetcode-hot100/**/*.md"], "defaultCategory": "算法题解", "tags": ["算法"],
+      "stages": ["哈希与双指针", "滑动窗口与链表", "树与图", "回溯与二分", "动态规划"]
+    }
+  ],
+  "exclude": ["**/README.md", "**/learning/**", "**/notes/**"],
+  "featured": ["frontend-interview/Day01", "flutter-interview-prep/题库/05-三棵树原理/25", "android-interview/03"]
+}

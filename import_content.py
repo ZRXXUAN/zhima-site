@@ -23,6 +23,8 @@ for sid,name,folder,desc,icon,_ in subjects:
   sub=re.sub(r'^\d+-','',p.parent.name) if p.parent!=ROOT/folder else ('核心知识' if sid=='frontend' else '开发课程')
   if p.parent.name=='android-interview':sub='面试专题'
   plain=re.sub(r'```[\s\S]*?```','',body)
+  plain=re.sub(r'^\s*[#>].*$', '', plain, flags=re.M)
+  plain=re.sub(r'\[([^\]]+)\]\([^)]+\)',r'\1',plain)
   plain=re.sub(r'[#*`>|\[\]_-]','',plain)
   summary=next((l.strip() for l in plain.splitlines() if len(l.strip())>35 and not l.startswith('http')),plain[:100])[:115]
   tags=[]

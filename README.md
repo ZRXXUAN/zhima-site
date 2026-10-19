@@ -1,5 +1,7 @@
 # 知码 · 程序员知识库
 
+在线阅读：[知码知识库](https://zrxxuan.github.io/zhima-site/)
+
 前端、Flutter、Android 和算法知识网站，汇集配套 `ti` 仓库中的 223 篇 Markdown 文档。
 
 原始学习资料：[ZRXXUAN/ti](https://github.com/ZRXXUAN/ti)（私有仓库）。网站源码公开，`dist/` 包含用于公开阅读的 223 篇文档。
